@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:member_info/splash.dart';
 import 'package:member_info/visibility.dart';
+import 'animation.dart';
 import 'member.dart';
 
 
@@ -12,11 +13,13 @@ class Routes {
   static String splash = '/splash';
   static String member = '/member';
   static String visibility = '/visibility';
+  static String animation = '/animation';
 
   static final routes = <String, WidgetBuilder>{
     splash: (context) => SlpashScreen(),
     member: (context) => MemberPage(),
     visibility: (context) => ControlleApp(),
+    animation: (context) => AnimatedContainerApp(),
 
   };
 }
